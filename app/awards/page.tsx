@@ -36,7 +36,7 @@ export default function AwardsPage() {
                   </div>
 
                   <h3 className="text-cream text-3xl sm:text-4xl italic font-light leading-snug mb-6" style={{ fontFamily:"var(--font-cormorant)" }}>
-                    Restoration of Hazrat Shah Rukn-e-Alam Mausoleum, Multan
+                    Restoration, Reproduction &amp; Extension of Hazrat Shah Rukn-e-Alam Mausoleum, Multan
                   </h3>
 
                   <div className="space-y-4 text-cream/60 text-sm leading-relaxed" style={{ fontFamily:"var(--font-inter)" }}>
@@ -52,9 +52,9 @@ export default function AwardsPage() {
                       ["Award", "Aga Khan Award for Architecture"],
                       ["Year", "1984"],
                       ["Recipient", "Ustad Allah Diwaya"],
-                      ["Project", "Hazrat Shah Rukn-e-Alam Mausoleum"],
+                      ["Project", "Restoration, Reproduction & Extension of Hazrat Shah Rukn-e-Alam Mausoleum"],
                       ["Location", "Multan, Punjab, Pakistan"],
-                      ["Project Date", "1985 Restoration"],
+                      ["Project Date", "1985 Restoration & Extension"],
                     ].map(([k, v]) => (
                       <div key={k}>
                         <p className="text-gold/60 text-[9px] tracking-[0.3em] uppercase mb-0.5" style={{ fontFamily:"var(--font-inter)" }}>{k}</p>
@@ -81,8 +81,8 @@ export default function AwardsPage() {
             {[
               { year:"17th C.", colour:"bg-stone", event:"Thaheem Ansari Family Begins the Craft", detail:"The family tradition of Kashikari begins in Multan. The exact generation is not recorded, but oral history traces the craft back over 300 years." },
               { year:"1950s–70s", colour:"bg-cobalt/60", event:"Ustad Allah Diwaya Rises to Mastery", detail:"Father of Muhammad Wajid. Trains all seven sons in the craft. Leads the family workshop to regional prominence." },
-              { year:"1984", colour:"bg-gold", event:"Aga Khan Award for Architecture", detail:"Ustad Allah Diwaya receives one of the world's most prestigious architecture awards for his contribution to restoring Hazrat Shah Rukn-e-Alam Mausoleum." },
-              { year:"1985", colour:"bg-cobalt/60", event:"Hazrat Shah Rukn-e-Alam Restoration Complete", detail:"The landmark restoration is completed. Muhammad Wajid contributes alongside his father. The project cements the family's status as Multan's premier Kashigar family." },
+              { year:"1984", colour:"bg-gold", event:"Aga Khan Award for Architecture", detail:"Ustad Allah Diwaya receives one of the world's most prestigious architecture awards for the Restoration, Reproduction & Extension of Hazrat Shah Rukn-e-Alam Mausoleum, Multan." },
+              { year:"1985", colour:"bg-cobalt/60", event:"Restoration, Reproduction & Extension Complete", detail:"The landmark project is completed. Muhammad Wajid contributes alongside his father. The work cements the Kashigar family's standing as Multan's foremost Kashikari craftsmen." },
               { year:"Various", colour:"bg-cobalt/60", event:"Hazrat Musa Pak Shaheed Tomb Restoration", detail:"Father and son work together on the restoration of another significant Multani shrine." },
               { year:"2021", colour:"bg-cobalt/60", event:"Featured in Dawn Newspaper", detail:"\"Lone artisan sees Kashigari a dying art\" — Muhammad Wajid speaks about the challenges facing authentic Kashikari." },
               { year:"2024", colour:"bg-cobalt/60", event:"Featured in Dawn — Non-Fiction", detail:"\"Legacies in Clay\" — the Kashigar family&apos;s multi-generational story is documented in a major feature." },

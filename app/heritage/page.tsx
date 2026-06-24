@@ -99,7 +99,7 @@ export default function HeritagePage() {
                 <div className="grid sm:grid-cols-3 gap-8 items-start">
                   <div className="sm:col-span-2 space-y-4 text-sm leading-relaxed" style={{ fontFamily:"var(--font-inter)" }}>
                     <p className="text-cream/80">In 1984, the family workshop of Ustad Allah Diwaya — father of Muhammad Wajid — received the Aga Khan Award for Architecture, one of the world&apos;s most prestigious recognitions of excellence in architecture and the built environment.</p>
-                    <p className="text-cream/60">The award was given for the family&apos;s contribution to the <strong className="text-cream/80">restoration of the Hazrat Shah Rukn-e-Alam Mausoleum</strong> in Multan in 1985 — a 14th-century Sufi shrine considered one of the finest examples of Timurid and Tughluq architecture in South Asia.</p>
+                    <p className="text-cream/60">The award was given for the family&apos;s contribution to the <strong className="text-cream/80">Restoration, Reproduction &amp; Extension of the Hazrat Shah Rukn-e-Alam Mausoleum</strong> in Multan — a 14th-century Sufi shrine considered one of the finest examples of Timurid and Tughluq architecture in South Asia.</p>
                     <p className="text-cream/60">Muhammad Wajid, then a young apprentice, worked alongside his father on this landmark project. The experience shaped his commitment to authentic red clay Kashikari and monument-quality craftsmanship.</p>
                   </div>
                   <div className="flex flex-col gap-4">
@@ -108,7 +108,7 @@ export default function HeritagePage() {
                       <p className="text-cream/50 text-[10px] tracking-[0.2em] uppercase mt-2" style={{ fontFamily:"var(--font-inter)" }}>Year Awarded</p>
                     </div>
                     <div className="border border-gold/20 p-6 text-center">
-                      <p className="text-cream/80 text-sm italic" style={{ fontFamily:"var(--font-cormorant)" }}>Shah Rukn-e-Alam Mausoleum</p>
+                      <p className="text-cream/80 text-sm italic" style={{ fontFamily:"var(--font-cormorant)" }}>Restoration, Reproduction &amp; Extension — Shah Rukn-e-Alam Mausoleum</p>
                       <p className="text-cream/50 text-[10px] tracking-[0.2em] uppercase mt-2" style={{ fontFamily:"var(--font-inter)" }}>Project Recognised</p>
                     </div>
                   </div>

@@ -121,24 +121,43 @@ export default function AboutPage() {
       {/* ── FAMILY TRIBUTE */}
       <section className="relative py-24 bg-cobalt-900 overflow-hidden">
         <div className="absolute inset-0 tile-pattern opacity-10" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-6" style={{ fontFamily:"var(--font-inter)" }}>A Note on the Next Generation</p>
-          <blockquote className="text-cream text-3xl sm:text-4xl italic font-light leading-relaxed" style={{ fontFamily:"var(--font-cormorant)" }}>
-            &ldquo;The art has been transferred from one generation to another, but I&rsquo;m not sure if my children will keep the tradition alive.&rdquo;
-          </blockquote>
-          <p className="mt-6 text-cream/50 text-sm" style={{ fontFamily:"var(--font-inter)" }}>
-            His son, <strong className="text-cream/80">Ubaid Wajid Kashigar</strong>, is the 7th generation — currently learning and documenting the family craft.
-          </p>
-          <div className="mt-8">
-            <a
-              href="https://www.instagram.com/ubaid_wajid_/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-gold text-[11px] tracking-[0.2em] uppercase"
-              style={{ fontFamily:"var(--font-inter)" }}
-            >
-              Follow @ubaid_wajid_ on Instagram →
-            </a>
+        <div className="relative max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+
+            {/* Father-son images */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="aspect-square relative overflow-hidden">
+                <RealImg src="/images/wajid-ubaid-portrait.jpg" alt="Ustad Wajid and son Ubaid in the workshop holding Kashikari tiles" />
+              </div>
+              <div className="aspect-square relative overflow-hidden">
+                <RealImg src="/images/wajid-teaching-ubaid.jpg" alt="Ustad Wajid teaching Ubaid how to examine a tile" />
+              </div>
+              <div className="col-span-2 aspect-video relative overflow-hidden">
+                <RealImg src="/images/ubaid-learning-craft.jpg" alt="Ubaid painting a tile while Wajid shows him the pattern" />
+              </div>
+            </div>
+
+            {/* Quote + text */}
+            <div className="text-center lg:text-left">
+              <p className="text-gold/60 text-[10px] tracking-[0.4em] uppercase mb-6" style={{ fontFamily:"var(--font-inter)" }}>The Next Generation</p>
+              <blockquote className="text-cream text-3xl sm:text-4xl italic font-light leading-relaxed" style={{ fontFamily:"var(--font-cormorant)" }}>
+                &ldquo;The art has been transferred from one generation to another, but I&rsquo;m not sure if my children will keep the tradition alive.&rdquo;
+              </blockquote>
+              <p className="mt-6 text-cream/50 text-sm leading-relaxed" style={{ fontFamily:"var(--font-inter)" }}>
+                His son, <strong className="text-cream/80">Ubaid Wajid Kashigar</strong>, is the 7th generation — learning the craft at his father&apos;s side, painting tiles in the same workshop where six generations before him honed their craft.
+              </p>
+              <div className="mt-8">
+                <a
+                  href="https://www.instagram.com/ubaid_wajid_/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-gold text-[11px] tracking-[0.2em] uppercase"
+                  style={{ fontFamily:"var(--font-inter)" }}
+                >
+                  Follow @ubaid_wajid_ on Instagram →
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
