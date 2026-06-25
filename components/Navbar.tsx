@@ -95,7 +95,7 @@ export default function Navbar() {
           {/* ── Mobile toggle ── */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="p-2 text-cobalt"
+            className="p-2 text-cobalt cursor-pointer"
             aria-label="Toggle navigation"
           >
             <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
