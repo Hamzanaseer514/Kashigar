@@ -3,47 +3,47 @@
 import { useState } from "react";
 import PageHero from "@/components/PageHero";
 
-const categories = ["All", "Tiles", "Vessels", "Architectural", "Heritage Restoration", "Decorative"];
+const categories = ["All", "Tiles", "Vessels", "Architectural", "Heritage Reproduction", "Decorative"];
 
 const works = [
   // ── BLOCK 1 ───────────────────────────────────────────────────────────
-  { title:"Drawing the Pattern",                  cat:"Tiles",               size:"large",  year:"2024", img:"/images/wajid-drawing-tile-pattern.jpg" },
-  { title:"Carved Tile — Floral Motif",           cat:"Tiles",               size:"square", year:"2024", img:"/images/kashikari-carved-tile-closeup.jpg" },
-  { title:"Hand in Red Clay",                     cat:"Tiles",               size:"square", year:"2024", img:"/images/wajid-workshop-reel.jpg" },
+  { title:"Drawing the Pattern",                  cat:"Tiles",               size:"large",  year:"2023", img:"/images/wajid-drawing-tile-pattern.jpg" },
+  { title:"Carved Tile — Floral Motif",           cat:"Tiles",               size:"square", year:"2023", img:"/images/kashikari-carved-tile-closeup.jpg" },
+  { title:"Hand in Red Clay",                     cat:"Tiles",               size:"square", year:"2023", img:"/images/wajid-workshop-reel.jpg" },
   // ── NEW 1 — Ubaid drawing in full workshop interior ───────────────────
-  { title:"Ubaid at Work — Workshop Interior",    cat:"Heritage Restoration",size:"large",  year:"2024", img:"/images/ubaid-drawing-in-workshop.jpg" },
+  { title:"Ubaid at Work — Workshop Interior",    cat:"Heritage Reproduction",size:"large",  year:"2023", img:"/images/ubaid-drawing-in-workshop.jpg" },
   { title:"Floral Tabletop Panel",                cat:"Decorative",          size:"square", year:"2023", img:"/images/multan-pottery-4.jpg" },
-  { title:"Blue & White Handi Vase",              cat:"Vessels",             size:"square", year:"2022", img:"/images/multan-pottery-5.jpg" },
+  { title:"Blue & White Handi Vase",              cat:"Vessels",             size:"square", year:"2023", img:"/images/multan-pottery-5.jpg" },
   // ── BLOCK 2 ───────────────────────────────────────────────────────────
-  { title:"Ustad & Ubaid — Father and Son",       cat:"Heritage Restoration",size:"large",  year:"2024", img:"/images/wajid-ubaid-portrait.jpg" },
+  { title:"Ustad Wajid and Nauman Mirza",         cat:"Heritage Reproduction",size:"large",  year:"2023", img:"/images/wajid-ubaid-portrait.jpg" },
   { title:"Geometric Border Tile Strip",          cat:"Tiles",               size:"square", year:"2023", img:"/images/multan-pottery-3.jpg" },
-  { title:"Classic Multani Blue Tile",            cat:"Tiles",               size:"square", year:"2021", img:"/images/multan-pottery-2.jpg" },
+  { title:"Classic Multani Blue Tile",            cat:"Tiles",               size:"square", year:"2023", img:"/images/multan-pottery-2.jpg" },
   // ── NEW 2 — Cobalt floral serving dish ────────────────────────────────
-  { title:"Cobalt Floral Serving Dish",           cat:"Decorative",          size:"tall",   year:"2024", img:"/images/kashikari-floral-serving-dish.jpg" },
+  { title:"Cobalt Floral Serving Dish",           cat:"Decorative",          size:"tall",   year:"2023", img:"/images/kashikari-floral-serving-dish.jpg" },
   { title:"Workshop — A Living Museum",           cat:"Architectural",       size:"wide",   year:"2023", img:"/images/wajid-workshop-display.jpg" },
-  { title:"Geometric Star Tile",                  cat:"Tiles",               size:"square", year:"2024", img:"/images/kashikari-carved-tile-closeup.jpg" },
+  { title:"Geometric Star Tile",                  cat:"Tiles",               size:"square", year:"2023", img:"/images/kashikari-carved-tile-closeup.jpg" },
   { title:"Production — Three Stages",            cat:"Vessels",             size:"square", year:"2023", img:"/images/kashikari-vessels-production.jpg" },
   // ── BLOCK 3 ───────────────────────────────────────────────────────────
-  { title:"Passing the Knowledge — 6th to 7th",  cat:"Heritage Restoration",size:"wide",   year:"2024", img:"/images/wajid-teaching-ubaid.jpg" },
+  { title:"Passing the Knowledge — 6th to 7th",  cat:"Heritage Reproduction",size:"wide",   year:"2023", img:"/images/wajid-teaching-ubaid.jpg" },
   { title:"Calligraphy Vase — Cobalt & White",    cat:"Vessels",             size:"tall",   year:"2023", img:"/images/kashikari-calligraphy-vase.jpg" },
   // ── NEW 3 — Shrine gate with Kashikari tile archway ───────────────────
-  { title:"Shrine Gate — Kashikari Tile Archway", cat:"Heritage Restoration",size:"wide",   year:"2020", img:"/images/shrine-gate-kashikari-tiles.jpg" },
-  { title:"Shrine Restoration — Vase & Column",   cat:"Heritage Restoration",size:"large",  year:"2020", img:"/images/kashikari-vase-and-column.jpg" },
-  { title:"Ustad Wajid at the Kiln",              cat:"Heritage Restoration",size:"tall",   year:"2019", img:"/images/wajid-at-kiln.jpg" },
-  { title:"Cobalt Glazed Serving Dish",           cat:"Decorative",          size:"square", year:"2024", img:"/images/multan-pottery-4.jpg" },
+  { title:"Shrine Gate — Kashikari Tile Archway", cat:"Heritage Reproduction",size:"wide",   year:"2023", img:"/images/shrine-gate-kashikari-tiles.jpg" },
+  { title:"Shrine Restoration — Vase & Column",   cat:"Heritage Reproduction",size:"large",  year:"2023", img:"/images/kashikari-vase-and-column.jpg" },
+  { title:"Traditional Glaze Firing",             cat:"Heritage Reproduction",size:"tall",   year:"2023", img:"/images/wajid-at-kiln.jpg" },
+  { title:"Cobalt Glazed Serving Dish",           cat:"Decorative",          size:"square", year:"2023", img:"/images/multan-pottery-4.jpg" },
   // ── NEW 4 — Calligraphy jar close-up ──────────────────────────────────
   { title:"Calligraphy Jar — Arabic Inscriptions",cat:"Vessels",             size:"square", year:"2023", img:"/images/kashikari-calligraphy-jar.jpg" },
-  { title:"Cobalt Vase — Arabesque Series",       cat:"Vessels",             size:"square", year:"2021", img:"/images/multan-pottery-2.jpg" },
+  { title:"Cobalt Vase — Arabesque Series",       cat:"Vessels",             size:"square", year:"2023", img:"/images/multan-pottery-2.jpg" },
   // ── BLOCK 4 ───────────────────────────────────────────────────────────
-  { title:"Portrait — Ustad Muhammad Wajid",     cat:"Heritage Restoration",size:"large",  year:"2021", img:"/images/wajid-kashigar-1.jpg" },
+  { title:"Portrait — Ustad Muhammad Wajid",     cat:"Heritage Reproduction",size:"large",  year:"2023", img:"/images/wajid-kashigar-1.jpg" },
   { title:"Clay Tile Setting — Outdoor Workshop", cat:"Architectural",       size:"square", year:"2023", img:"/images/wajid-kashigar-2.jpg" },
-  { title:"Eight-Pointed Star Tile Panel",        cat:"Tiles",               size:"square", year:"2022", img:"/images/multan-pottery-1.jpg" },
+  { title:"Eight-Pointed Star Tile Panel",        cat:"Tiles",               size:"square", year:"2023", img:"/images/multan-pottery-1.jpg" },
   // ── NEW 5 — Ubaid painting a dish ─────────────────────────────────────
-  { title:"Ubaid — Painting a Ceremonial Dish",   cat:"Heritage Restoration",size:"tall",   year:"2024", img:"/images/ubaid-painting-dish.jpg" },
-  { title:"Learning the Craft — Ubaid at Work",   cat:"Heritage Restoration",size:"large",  year:"2024", img:"/images/ubaid-learning-craft.jpg" },
-  { title:"Architectural Finials & Tile Panels",  cat:"Architectural",       size:"square", year:"2022", img:"/images/kashikari-architectural-pieces.jpg" },
+  { title:"Ubaid — Painting a Ceremonial Dish",   cat:"Heritage Reproduction",size:"tall",   year:"2023", img:"/images/ubaid-painting-dish.jpg" },
+  { title:"Learning the Craft — Nauman Mirza",   cat:"Heritage Reproduction",size:"large",  year:"2023", img:"/images/ubaid-learning-craft.jpg" },
+  { title:"Architectural Finials & Tile Panels",  cat:"Architectural",       size:"square", year:"2023", img:"/images/kashikari-architectural-pieces.jpg" },
   // ── NEW 6 — Shah Rukn-e-Alam dome tiles (historic) ────────────────────
-  { title:"Shah Rukn-e-Alam — Dome Tile Detail",  cat:"Heritage Restoration",size:"large",  year:"1985", img:"/images/shah-rukn-e-alam-dome-tiles.jpg" },
+  { title:"Shah Rukn-e-Alam — Dome Tile Detail",  cat:"Heritage Reproduction",size:"large",  year:"2023", img:"/images/shah-rukn-e-alam-dome-tiles.jpg" },
 ];
 
 function ImgPlaceholder({ className = "" }: { className?: string }) {

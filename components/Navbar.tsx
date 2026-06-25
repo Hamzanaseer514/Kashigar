@@ -54,7 +54,7 @@ export default function Navbar() {
                 className="font-heading text-cobalt text-xl font-semibold tracking-[0.2em] uppercase"
                 style={{ fontFamily: "var(--font-cormorant)" }}
               >
-                Kashigar
+                Ustad Ubaid Kashigar
               </span>
               <span className="text-stone text-[9px] tracking-[0.25em] uppercase mt-0.5"
                 style={{ fontFamily: "var(--font-inter)" }}>
@@ -64,7 +64,7 @@ export default function Navbar() {
           </Link>
 
           {/* ── Desktop links ── */}
-          <div className="hidden lg:flex items-center gap-0.5">
+          <div className="hidden items-center gap-0.5">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
@@ -95,10 +95,10 @@ export default function Navbar() {
           {/* ── Mobile toggle ── */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden p-2 text-cobalt"
+            className="p-2 text-cobalt"
             aria-label="Toggle navigation"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" strokeWidth={1.8} viewBox="0 0 24 24">
               {isOpen ? (
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               ) : (
@@ -110,7 +110,7 @@ export default function Navbar() {
 
         {/* ── Mobile drawer ── */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 ${
+          className={`overflow-hidden transition-all duration-300 ${
             isOpen ? "max-h-screen border-t border-cobalt/10 pb-4" : "max-h-0"
           }`}
         >

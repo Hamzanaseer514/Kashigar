@@ -3,7 +3,7 @@ import Link from "next/link";
 const explore = [
   { label: "Home", href: "/" },
   { label: "About the Artist", href: "/about" },
-  { label: "CV", href: "/cv" },
+  // { label: "CV", href: "/cv" }, // hidden by manager — can re-enable later
   { label: "The Naqashi Heritage", href: "/heritage" },
   { label: "Gallery & Portfolio", href: "/gallery" },
   { label: "Workshops & Teaching", href: "/workshops" },

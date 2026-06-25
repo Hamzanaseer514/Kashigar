@@ -112,7 +112,7 @@ export default function HomePage() {
           <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {([
               { title:"Carved Tile — Floral Motif",       cat:"Tiles",       tall:false, img:"/images/kashikari-carved-tile-closeup.jpg" },
-              { title:"Ustad at the Kiln",                cat:"Workshop",    tall:true,  img:"/images/wajid-at-kiln.jpg" },
+              { title:"Traditional Glaze Firing",          cat:"Glazing",     tall:true,  img:"/images/wajid-at-kiln.jpg" },
               { title:"Shrine Restoration Tiles",         cat:"Heritage",    tall:false, img:"/images/wajid-workshop-display.jpg" },
               { title:"Calligraphy Vase",                 cat:"Vessels",     tall:true,  img:"/images/kashikari-calligraphy-vase.jpg" },
               { title:"Drawing the Pattern",              cat:"Craft Process",tall:false, img:"/images/wajid-drawing-tile-pattern.jpg" },
